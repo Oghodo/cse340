@@ -1,0 +1,120 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f4f4;
+color:#222;
+}
+
+/* header */
+
+.site-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px;
+background:#003366;
+color:white;
+}
+
+.account{
+color:white;
+text-decoration:none;
+}
+
+/* navigation */
+
+nav{
+background:#222;
+}
+
+.nav-list{
+display:flex;
+flex-wrap:wrap;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.nav-list li{
+flex:1;
+text-align:center;
+}
+
+.nav-list a{
+display:block;
+padding:10px;
+color:white;
+text-decoration:none;
+}
+
+/* hero */
+
+.hero{
+position:relative;
+text-align:center;
+}
+
+.hero img{
+width:100%;
+}
+
+.hero-text{
+background:rgba(255,255,255,0.9);
+padding:10px;
+margin:10px;
+}
+
+.cta{
+background:#00aaff;
+border:none;
+padding:10px 20px;
+color:white;
+font-weight:bold;
+}
+
+/* sections */
+
+.home-sections{
+padding:20px;
+}
+
+.upgrade-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+text-align:center;
+}
+
+.upgrade-grid img{
+width:100%;
+}
+
+/* Desktop */
+
+@media (min-width:768px){
+
+.home-sections{
+display:flex;
+gap:40px;
+}
+
+.reviews{
+flex:1;
+}
+
+.upgrades{
+flex:1;
+}
+
+.upgrade-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero-text{
+position:absolute;
+top:20%;
+left:10%;
+width:250px;
+}
+
+}
